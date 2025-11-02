@@ -1,4 +1,4 @@
-/* Body styling */
+/* General body styling */
 body {
   background-color: #f5f5f5;
   font-family: Arial, sans-serif;
@@ -56,4 +56,39 @@ body {
   width: 30%;
   margin: 5px;
   border-radius: 8px;
+  transition: transform 0.3s ease;
+}
+
+/* Add a hover effect for fun */
+.pictorial-news-section img:hover {
+  transform: scale(1.05);
+}
+
+/* 🔹 Responsive Design */
+@media (max-width: 768px) {
+  .latest-news-section,
+  .pictorial-news-section {
+    width: 90%;
+    padding: 15px;
+  }
+
+  .pictorial-news-section img {
+    width: 80%;
+    margin: 10px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .header h2 {
+    font-size: 1.4rem;
+  }
+
+  .latest-news-section h3,
+  .pictorial-news-section h3 {
+    font-size: 1.2rem;
+  }
+
+  .pictorial-news-section img {
+    width: 100%;
+  }
 }
